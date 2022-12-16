@@ -9,9 +9,9 @@ pipeline
 	stages
 	{
 		stage("Stage-A"){
-		{
-			when { expression {params.env == 'dev'} || params.env == "prod"}
-		}
+		
+			when { expression {params.env == 'dev' || params.env == "prod"}}
+		
 
 		steps
 		{
